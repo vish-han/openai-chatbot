@@ -10,7 +10,7 @@ res.send('Chatbot is running')
 })
 app.get('/status', (req, res) => {
     try {
-        res.send({health: "Green ✅", message: "Chatbot is running"})
+        res.send({health: "Green ✅", message: "Systum is up and running"})
     } catch (error) {
         res.status(500).send({Health: "Red ❌", message: error.message})
     }
